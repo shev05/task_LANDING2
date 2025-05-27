@@ -96,9 +96,9 @@
     }
 
     .header__naviganion nav ul {
-        position: fixed;
+        position: absolute;
         top: 130px;
-        right: -297px;
+        left: -297px;
         width: 297px;
         height: 585px;
         background-color: #030303;
@@ -108,10 +108,11 @@
         overflow: hidden;
         transition: right 0.3s ease;
         margin: 0;
+        z-index: 10;
     }
 
     .header__naviganion nav ul.show {
-        left: 0; 
+        left: -2.75%; 
     }
 
     .header__naviganion nav ul li {
@@ -211,10 +212,10 @@
         height: 110px;
     }
     .header__naviganion nav ul {
-        position: fixed;
+        position: absolute;
         top: 110px;
-        width: 100%;
-        right: -100%;
+        width: 768px;
+        left: -200%;
         height: 861px;
         background-color: #030303;
         flex-direction: column;
@@ -258,8 +259,11 @@
     }
     .nav__image__block{
         gap: 30px;
+        flex-wrap: wrap;
         position: relative;
+        justify-content: center; 
         display: flex;
+        flex-direction: row;
         margin: 0 auto;
     }
     .subscribe__image{
@@ -291,5 +295,74 @@
 }   
 
 @media (max-width: 420px) {
-    
+    .bg__header{
+        width: 100%;
+        height: 90px;
+    }
+
+    .header{
+        width: 380px;
+        height: 90px;
+    }
+    .header__naviganion nav ul.show {
+        left: -5.25%; 
+    }
+    .header__naviganion nav ul {
+        position: absolute;
+        top: 90px;
+        width: 420px;
+        left: -200%;
+        height: 544px;
+    }
+    .header__naviganion nav ul{
+        justify-content: start;
+    }
+    .header__naviganion nav ul li {
+        width: calc(100% - 600px);
+        margin-top: 10px;
+    }
+
+    .header__naviganion nav a {
+        padding: 2px 0;
+    }
+
+    .nav__image1{
+        padding: 0;
+        width: 95px; 
+        height: 95px;
+    }
+    .nav__image2{
+        width: 95px; 
+        height: 95px;
+    }
+    .nav__image3{
+
+        width: 95px; 
+        height: 95px;
+    }
+    .subscribe__image{
+        display: flex;
+        position: relative;
+        gap: 30px;
+        margin: 20px auto;
+    }
+
+    .youtube__image, .instagram__image,
+    .facebook__image, .twitter__image,
+    .pinterest__image{
+        width: 24px;
+        height: 24px;
+        padding: 10px;
+        border: white solid 1px;
+        border-radius: 50%;
+    }
+
+    .divider-line {
+        display: block;
+        border: none;
+        height: 1px;
+        background-color: #fff; 
+        margin-top:50px ;
+        width: 87%;
+    }
 }
