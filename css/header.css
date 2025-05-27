@@ -60,6 +60,25 @@
     position: relative;
     letter-spacing: 2px;
 }
+.menu-arrow {
+    display: none;
+}
+
+.nav__image1{
+    display: none;
+}
+.nav__image2{
+    display: none;
+}
+.nav__image3{
+    display: none;
+}
+.subscribe__image{
+    display: none;
+}
+.divider-line{
+    display: none;
+}
 
 @media (max-width: 1024px) {
     .bg__header{
@@ -75,4 +94,202 @@
     .header__logo{
         gap: 10px;
     }
+
+    .header__naviganion nav ul {
+        position: fixed;
+        top: 130px;
+        right: -297px;
+        width: 297px;
+        height: 585px;
+        background-color: #030303;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        overflow: hidden;
+        transition: right 0.3s ease;
+        margin: 0;
+    }
+
+    .header__naviganion nav ul.show {
+        left: 0; 
+    }
+
+    .header__naviganion nav ul li {
+        width: calc(100% - 165px);
+        margin-top: 35px;
+        margin-left: 55px;
+        position: relative;
+        padding-right: 20px;
+        font-size: 20px;
+    }
+
+    .header__naviganion nav a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    .menu-arrow {
+        display: inline;
+        font-weight: bold;
+        position: absolute;
+        right: 0;
+    }
+
+    .burger-menu {
+        display: block;
+        width: 30px;
+        height: 20px;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .burger-menu span {
+        display: block;
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background: white;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: .25s ease-in-out;
+    }
+
+    .burger-menu span:nth-child(1) {
+        top: 0;
+    }
+
+    .burger-menu span:nth-child(2),
+    .burger-menu span:nth-child(3) {
+        top: 10px;
+    }
+
+    .burger-menu span:nth-child(4) {
+        top: 20px;
+    }
+
+    .burger-menu.open span:nth-child(1) {
+        top: 10px;
+        width: 0%;
+        left: 50%;
+    }
+
+    .burger-menu.open span:nth-child(2) {
+        transform: rotate(45deg);
+    }
+
+    .burger-menu.open span:nth-child(3) {
+        transform: rotate(-45deg);
+    }
+
+    .burger-menu.open span:nth-child(4) {
+        top: 10px;
+        width: 0%;
+        left: 50%;
+    }
+
+    .header__naviganion nav {
+        display: none;
+    }
+
+    .header__naviganion.mobile-nav nav {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .bg__header{
+        width: 100%;
+        height: 110px;
+    }
+
+    .header{
+        width: 728px;
+        height: 110px;
+    }
+    .header__naviganion nav ul {
+        position: fixed;
+        top: 110px;
+        width: 100%;
+        right: -100%;
+        height: 861px;
+        background-color: #030303;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        overflow: hidden;
+        transition: right 0.3s ease;
+        margin: 0;  
+    }
+    .header__naviganion nav ul{
+        justify-content: start;
+    }
+    .header__naviganion nav ul li {
+        width: calc(100% - 600px);
+        margin-top: 10px;
+    }
+
+    .header__naviganion nav a {
+        padding: 2px 0;
+    }
+
+    .nav__image1{
+        padding: 30px 0;
+        display: flex;
+        position: relative;
+        width: 658px; 
+        height: 194px;
+        margin: 0 auto;
+    }
+    .nav__image2{
+        position: relative;
+        width: 319px; 
+        height: 161px;
+        display: flex;
+    }
+    .nav__image3{
+        position: relative;
+        display: flex;
+        width: 319px; 
+        height: 161px;
+    }
+    .nav__image__block{
+        gap: 30px;
+        position: relative;
+        display: flex;
+        margin: 0 auto;
+    }
+    .subscribe__image{
+        display: flex;
+        position: relative;
+        gap: 30px;
+        margin: 20px auto;
+    }
+
+    .youtube__image, .instagram__image,
+    .facebook__image, .twitter__image,
+    .pinterest__image{
+        width: 24px;
+        height: 24px;
+        padding: 10px;
+        border: white solid 1px;
+        border-radius: 50%;
+    }
+
+    .divider-line {
+        display: block;
+        border: none;
+        height: 1px;
+        background-color: #fff; 
+        margin-top:50px ;
+        width: 87%;
+    }
+
+}   
+
+@media (max-width: 420px) {
+    
 }
