@@ -279,22 +279,6 @@
     .welcome__header__button{
         display: none;
     }
-    .welcome__photos{
-        align-items: center;
-        width: 728px;
-        left: 0px;
-        height: 790px;
-    }
-    .pagination {
-        display: flex;
-        position: relative;
-        width: 100%;
-        left: 0;
-        justify-content: center;
-        top: auto;
-        padding: 0;
-    }
-
     .welcome__photo{
         position: relative;
         width: 328px;
