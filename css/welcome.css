@@ -1,0 +1,287 @@
+.welcome{
+    background-color: #030303;
+    width: 100%;
+    height: 810px;
+    overflow: hidden;
+}
+
+.container__welcome{
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    background-color: #030303;
+    width: 1440px;
+    height: 810px;
+}
+
+.welcome__header{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    width: 598px;
+    height: 388px;
+    z-index: 4;
+    top: 150px;
+    color: white;
+}
+
+.welcome__header_text{
+    font-family: 'Forum';
+    width: 593px;
+    height: 180px;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.welcome__header p{
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 2px;
+    width: 445px;
+    height: 33px;
+}
+
+.welcome__header__button{
+    width: 360px;
+    height: 75px;
+    margin-top: 20px;
+    background-color: #710707;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 2px;
+    border: none;
+    cursor: pointer;
+}
+
+.welcome__photos{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    width: 1000px;
+    height: 810px;
+    left: 440px;
+    z-index: 2;
+}
+
+.welcome__photo{
+    display: none;
+    position: absolute;
+    width: 1000px;
+    height: 750px;
+}
+
+.welcome__photo.active {
+    display: flex;
+}
+
+.dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #A4834E; 
+}
+
+.pagination {
+    display: flex;
+    position: relative;
+    left: 400px;
+    top:690px;
+    padding: 0;
+    user-select: none;
+    margin: 0;
+    width: 600px;
+    height: 120px;
+    align-items: center;
+    background-color: #030303;
+    text-align: center;
+    color: white;
+    padding: 0 50px;
+}
+
+.photo__count{
+    font-size: 22px;
+    line-height: 40px;
+    letter-spacing: 0px;
+    padding-right: 40px;
+}
+
+.pagination__dot{
+    display: flex;
+    position: relative;
+    gap: 20px;
+}
+
+.paggination__button{
+    display: flex;
+    position: relative;
+    gap: 20px;
+    background-color: #030303;
+    padding-left:40px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.arrow-left, 
+.arrow-right {
+    background-color: #030303;
+    border: 0;
+    color: white;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1024px) {
+    .container__welcome{
+        width: 100%;
+    }
+    .welcome__header{
+        top: 50px;
+        left: 20px;
+    }
+    .welcome__header_text{
+        width: 396px;
+        height: 180px;
+        font-size: 50px;
+        line-height: 90px;
+        letter-spacing: 5px;
+    }
+    .welcome__header p{
+        font-size: 24px;
+    }
+    .welcome__header__button{
+        width: 300px;
+        height: 60px;
+        font-size: 20px;
+    }
+    .welcome__photos{
+        width: 700px;
+        height: 585px;
+        left: 304px;
+    }
+    .pagination {
+        width: 100%;
+        left: 0;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .welcome{
+        height: 861px;
+    }
+    .container__welcome{
+        height: 861px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .welcome__header{
+        position: relative;
+        top: 0px;
+        left: 0px;
+        text-align: center;
+        align-items: center;
+        height: 200px;
+
+    }
+    .welcome__header_text{
+        display: flex;
+        position: relative;
+        width: 320px;
+        height: 120px;
+        font-size: 40px;
+        line-height: 60px;
+        letter-spacing: 5px;
+    }
+    .welcome__header p{
+        display: flex;
+        position: relative;
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    .welcome__header__button{
+        display: none;
+    }
+    .welcome__photos{
+        display: flex;
+        position: relative;
+        width: 728px;
+        left: 0px;
+        height: 790px;
+    }
+    .pagination {
+        display: flex;
+        position: relative;
+        width: 100%;
+        left: 0;
+        justify-content: center;
+        top: auto;
+        padding: 0;
+    }
+
+    .welcome__photo{
+        position: relative;
+        width: 728px;
+        height: 546px;
+    }
+}
+
+@media (max-width: 420px) {
+    .welcome{
+        height: 544px;
+        width: 100%;
+    }
+    .container__welcome{
+        height: 544px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .welcome__header{
+        position: relative;
+        top: 0px;
+        left: 0px;
+        text-align: center;
+        align-items: center;
+        height: 200px;
+
+    }
+    .welcome__header_text{
+        width: 248px;
+        height: 80px;
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .welcome__header p{
+        font-size: 16px;
+    }
+    .welcome__header__button{
+        display: none;
+    }
+    .welcome__photo{
+        position: relative;
+        width: 328px;
+        height: 285px;
+    }
+}

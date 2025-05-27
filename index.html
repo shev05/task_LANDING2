@@ -6,6 +6,8 @@
     <title>Мой проект</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/welcome.css">
+
 </head>
 
 <body>
@@ -31,8 +33,8 @@
                         <li><a href="#gallery">Gallery <span class="menu-arrow">></span></a></li>
                         <li><a href="#tickets">Tickets <span class="menu-arrow">></span></a></li>
                         <li><a href="#contacts">Contacts <span class="menu-arrow">></span></a></li>
-                        <img class="nav__image1" src="components/photo1.png"/>
                         <div class="nav__image__block">
+                            <img class="nav__image1" src="components/photo1.png"/>
                             <img class="nav__image2" src="components/photo2.png"/>
                             <img class="nav__image3" src="components/photo3.png"/>
                         </div>
@@ -49,6 +51,41 @@
             </div>
         </div>
     </header>
+    <main>
+        <section class="welcome">        
+            <div class="container__welcome">
+                <div class="welcome__header">
+                    <h1 class="welcome__header_text">Welcome to the Louvre</h1>
+                    <p>From the castle to the museum</p>
+                    <button class="welcome__header__button">Discover the Louvre</button>
+                </div>
+                <div class="welcome__photos">
+                    <img class="welcome__photo active" src="components/woman1.png" alt="photo" data-index="0"/>
+                    <img class="welcome__photo" src="components/picture1.jpg" alt="photo" data-index="1"/>
+                    <img class="welcome__photo" src="components/picture3.jpg" alt="photo" data-index="2"/>
+                    <img class="welcome__photo" src="components/picture4.webp" alt="photo" data-index="3"/>
+                    <img class="welcome__photo" src="components/picture2.jpg" alt="photo" data-index="4"/>
+                    <div class="pagination">
+                        <p class="photo__count">01 | 05</p>
+                        <div class="pagination__dot">
+                            <span class="dot active" onclick="goToReview(0)"></span>
+                            <span class="dot" onclick="goToReview(1)"></span>
+                            <span class="dot" onclick="goToReview(2)"></span>
+                            <span class="dot" onclick="goToReview(3)"></span>
+                            <span class="dot" onclick="goToReview(4)"></span>
+                        </div>
+                        <div class="paggination__button">
+                            <button class="arrow-left" onclick="prevReview()">&larr;</button>
+                            <button class="arrow-right" onclick="nextReview()">&rarr;</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
     <script src="javaScripts/navMobile.js"></script>
+    <script src="javaScripts/paggination.js"></script>
+
 </body>
 </html>
