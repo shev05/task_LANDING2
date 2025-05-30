@@ -1,0 +1,243 @@
+.tour{
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    background-color: white;
+    width: 1440px;
+    height: 1116px;
+    padding: 75px 0;
+    flex-direction: column;
+}
+
+.tour__header{
+    font-family: 'Forum';
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 5px;
+    color: #9D8665;
+    margin: 0;
+}
+
+.tour .divider-line{
+    display: block;
+    border: none;
+    height: 1px;
+    background-color: #710707; 
+    margin-top:25px;
+    margin-bottom: 75px;
+    width: 100%;
+}
+
+.post__cards{
+    position: relative;
+    display: flex;
+    gap: 60px;
+    width: 1440px;
+    flex-wrap: wrap;
+}
+
+.post__card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 440px;
+    height: 424px;
+}
+
+.post__card__image{
+    height: 285px;
+}
+
+.post__card__name{
+    font-family: 'Forum';
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 5px;
+    color: black;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.post__card .divider-line{
+    margin-top:10px;
+    margin-bottom: 10px;
+    width: 300px;
+    background-color: #710707; 
+    margin-left: auto;
+    margin-inline-start: 0
+
+}
+
+.post__card__tour, .post__card__google{
+    font-family: 'Roboto';
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: black;
+    margin: 0 5px;
+}
+
+.post__card__google{
+    font-size: 18px;
+}
+
+@media (max-width: 1024px) {
+    .tour{
+        width: 984px;
+        height: 1313px;
+        padding: 60px 0;
+        flex-direction: column;
+    }
+
+    .tour .divider-line{
+        display: block;
+        border: none;
+        height: 1px;
+        background-color: #710707; 
+        margin-top:20px;
+        margin-bottom: 60px;
+        width: 100%;
+    }
+
+    .tour__header{
+        font-size: 50px;
+        line-height: 75px;
+        letter-spacing: 5px;
+    }
+
+    .post__cards{
+        position: relative;
+        display: flex;
+        gap: 60px;
+        width: 100%;
+        max-width: 984px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto 0;
+    }
+
+    .post__card{
+        width: 330px;
+        height: 345px;
+    }
+    .post__card__image{
+        height: 215px;
+    }
+
+    .post__card__name{
+        font-size: 28px;
+        line-height: 100%;
+        letter-spacing: 3px;
+    }
+    
+    .post__card .divider-line{
+        width: 150px;    
+        margin-top:10px;
+        margin-bottom: 10px;
+    }
+    
+    .post__card__tour, .post__card__google{
+        font-size: 20px;
+    }
+    
+    .post__card__google{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .tour{
+        width: 728px;
+        height: 1146px;
+        padding: 40px 0;
+        flex-direction: column;
+    }
+
+    .tour .divider-line{
+        display: block;
+        border: none;
+        height: 1px;
+        background-color: #710707; 
+        margin-top:20px;
+        margin-bottom: 40px;
+        width: 100%;
+    }
+
+    .tour__header{
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    .post__cards{
+        gap: 56px;
+        max-width: 728px;
+    }
+
+    .post__card{
+        width: 280px;
+        height: 301px;
+    }
+    .post__card__image{
+        height: 180px;
+    }
+
+    .post__card__name{
+        font-size: 22px;
+    }
+    
+    .post__card .divider-line{
+        width: 150px;    
+        margin-top:10px;
+        margin-bottom: 10px;
+    }
+    
+    .post__card__tour, .post__card__google{
+        font-size: 18px;
+    }
+    
+    .post__card__google{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 420px) {
+    .tour{
+        width: 380px;
+        height: 2073px;
+    }
+
+    .tour__header{
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    .post__cards{
+        max-width: 380px;
+    }
+
+    .post__card{
+        width: 280px;
+        height: 295px;
+    }
+    .post__card__image{
+        height: 180px;
+    }
+
+    .post__card__name{
+        font-size: 18px;
+    }
+    
+    
+    .post__card__tour, .post__card__google{
+        font-size: 16px;
+    }
+    
+    .post__card__google{
+        font-size: 16px;
+    }
+}
