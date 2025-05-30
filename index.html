@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/welcome.css">
-
+    <link rel="stylesheet" href="css/tour.css">
+    <link rel="stylesheet" href="css/pictureExplore.css">
 </head>
 
 <body>
@@ -80,12 +81,78 @@
                         </div>
                     </div>
                 </div>
-                
+            </div>
+        </section>
+        <section class="tour">
+            <h1 class="tour__header">Virtual tour</h1>
+            <hr class="divider-line">
+            <div class="post__cards">
+                <div class="post__card">
+                    <img  class='post__card__image' src="components/royalPalace.png" alt="image"/>
+                    <p class="post__card__name">Royal Palace</p>
+                    <hr class="divider-line">
+                    <p class="post__card__tour">360° Virtual Tour</p>
+                    <p class="post__card__google">Google Street Panorama View</p>
+                </div>
+                <div class="post__card">
+                    <img  class='post__card__image' src="components/denonWing.png" alt="image"/>
+                    <p class="post__card__name">Denon Wing</p>
+                    <hr class="divider-line">
+                    <p class="post__card__tour">360° Virtual Tour</p>
+                    <p class="post__card__google">Google Street Panorama View</p>
+                </div>
+                <div class="post__card">
+                    <img  class='post__card__image' src="components/colonnadePerrault.png" alt="image"/>
+                    <p class="post__card__name">Colonnade Perrault</p>
+                    <hr class="divider-line">
+                    <p class="post__card__tour">360° Virtual Tour</p>
+                    <p class="post__card__google">Google Street Panorama View</p>
+                </div>
+                <div class="post__card">
+                    <img  class='post__card__image' src="components/greekHall.png" alt="image"/>
+                    <p class="post__card__name">Greek hall</p>
+                    <hr class="divider-line">
+                    <p class="post__card__tour">360° Virtual Tour</p>
+                    <p class="post__card__google">Google Street Panorama View</p>
+                </div>
+                <div class="post__card">
+                    <img  class='post__card__image' src="components/monaLisa.png" alt="image"/>
+                    <p class="post__card__name">Mona Lisa</p>
+                    <hr class="divider-line">
+                    <p class="post__card__tour">360° Virtual Tour</p>
+                    <p class="post__card__google">Google Street Panorama View</p>
+                </div>
+                <div class="post__card">
+                    <img  class='post__card__image' src="components/nightPalace.png" alt="image"/>
+                    <p class="post__card__name">Night Palace</p>
+                    <hr class="divider-line">
+                    <p class="post__card__tour">360° Virtual Tour</p>
+                    <p class="post__card__google">Google Street Panorama View</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="pictureExplore__bg"></div>
+            <div class="pictureExplore">
+                <div class="pictureExplore__text">
+                    <h1 class="pictureExplore__header">Picture explore</h1>
+                    <hr class="divider-line">
+                    <p class="pictureExplore__first__text">Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of the Spanish Golden Age.</p>
+                    <p class="pictureExplore__first__text">It was cleaned in 1984 to remove a <span class="yellow__veil">"yellow veil"</span> of dust that had gathered since the previous restoration in the 19th century.</p>
+                    <p class="pictureExplore__last__text">The cleaning provoked furious protests, not because the picture had been damaged in any way, but because it looked different.</p>
+                </div>
+                <div class="pictureExplore__image">
+                    <div class="image-comparison">
+                        <img class="explore__image explore__image--original" src="components/pictureExplore.png">
+                        <div class="explore__image explore__image--overlay"></div>
+                        <div class="comparison-line" id="comparisonLine"></div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
     <script src="javaScripts/navMobile.js"></script>
     <script src="javaScripts/paggination.js"></script>
-
+    <script src="javaScripts/photoChange.js"></script>
 </body>
 </html>
