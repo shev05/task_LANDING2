@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/welcome.css">
     <link rel="stylesheet" href="css/tour.css">
     <link rel="stylesheet" href="css/pictureExplore.css">
+    <link rel="stylesheet" href="css/video.css">
 </head>
 
 <body>
@@ -150,9 +151,95 @@
                 </div>
             </div>
         </section>
+        <section class="video">
+            <div class="video__header">
+                <h1 class="video__header_name">Video journey</h1>
+                <p class="video__header__text">Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code</p>
+            </div>
+            <div class="video__container">
+                <iframe 
+                    id="mainVideo"
+                    src="https://www.youtube.com/embed/6mZzMf0ccVc?autoplay=0&mute=0&rel=0" 
+                    frameborder="0" 
+                    allow="clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video__next active">
+                <div class="video__thumb" data-video-id="6mZzMf0ccVc">
+                    <img src="https://img.youtube.com/vi/6mZzMf0ccVc/mqdefault.jpg" alt="Video 1">
+                </div>
+                <div class="video__thumb" data-video-id="3kiH-HDl-7c">
+                    <img src="https://img.youtube.com/vi/3kiH-HDl-7c/mqdefault.jpg" alt="Video 2">
+                </div>
+                <div class="video__thumb" data-video-id="xorVjyl-ch0">
+                    <img src="https://img.youtube.com/vi/xorVjyl-ch0/mqdefault.jpg" alt="Video 3">
+                </div>
+            </div>
+            <div class="video__next">
+                <div class="video__thumb" data-video-id="BvluH7koof4">
+                    <img src="https://img.youtube.com/vi/BvluH7koof4/mqdefault.jpg" alt="Video 1">
+                </div>
+                <div class="video__thumb" data-video-id="kwgVsslY4mo">
+                    <img src="https://img.youtube.com/vi/kwgVsslY4mo/mqdefault.jpg" alt="Video 2">
+                </div>
+                <div class="video__thumb" data-video-id="ja4rz1sFNxQ">
+                    <img src="https://img.youtube.com/vi/ja4rz1sFNxQ/mqdefault.jpg" alt="Video 3">
+                </div>
+            </div>
+            <div class="video__next">
+                <div class="video__thumb" data-video-id="6mZzMf0ccVc">
+                    <img src="https://img.youtube.com/vi/6mZzMf0ccVc/mqdefault.jpg" alt="Video 1">
+                </div>
+                <div class="video__thumb" data-video-id="3kiH-HDl-7c">
+                    <img src="https://img.youtube.com/vi/3kiH-HDl-7c/mqdefault.jpg" alt="Video 2">
+                </div>
+                <div class="video__thumb" data-video-id="xorVjyl-ch0">
+                    <img src="https://img.youtube.com/vi/xorVjyl-ch0/mqdefault.jpg" alt="Video 3">
+                </div>
+            </div>
+            <div class="video__next">
+                <div class="video__thumb" data-video-id="t9gO2EwZKH8">
+                    <img src="https://img.youtube.com/vi/t9gO2EwZKH8/mqdefault.jpg" alt="Video 1">
+                </div>
+                <div class="video__thumb" data-video-id="MdVxdVqdTto">
+                    <img src="https://img.youtube.com/vi/MdVxdVqdTto/mqdefault.jpg" alt="Video 2">
+                </div>
+                <div class="video__thumb" data-video-id="YLyH_B7snoc">
+                    <img src="https://img.youtube.com/vi/YLyH_B7snoc/mqdefault.jpg" alt="Video 3">
+                </div>
+            </div>
+            <div class="video__next">
+                <div class="video__thumb" data-video-id="eLDyyX4998I">
+                    <img src="https://img.youtube.com/vi/eLDyyX4998I/mqdefault.jpg" alt="Video 1">
+                </div>
+                <div class="video__thumb" data-video-id="7NBQT9aEeZw">
+                    <img src="https://img.youtube.com/vi/7NBQT9aEeZw/mqdefault.jpg" alt="Video 2">
+                </div>
+                <div class="video__thumb" data-video-id="XgT7jhEVf8o">
+                    <img src="https://img.youtube.com/vi/XgT7jhEVf8o/mqdefault.jpg" alt="Video 3">
+                </div>
+            </div>
+            <div class="video__pagination">
+                <button class="quwue-left" onclick="prevReviewVideo()">&laquo;</button>
+                <div class="video__pagination__dot">
+                    <span class="video__dot active" onclick="goToReviewVideo(0)"></span>
+                    <span class="video__dot" onclick="goToReviewVideo(1)"></span>
+                    <span class="video__dot" onclick="goToReviewVideo(2)"></span>
+                    <span class="video__dot" onclick="goToReviewVideo(3)"></span>
+                    <span class="video__dot" onclick="goToReviewVideo(4)"></span>
+                </div>
+                <button class="quwue-right" onclick="nextReviewVideo()">&raquo;</button>
+            </div>
+        </section>
+        <section>
+            
+        </section>
     </main>
     <script src="javaScripts/navMobile.js"></script>
     <script src="javaScripts/paggination.js"></script>
     <script src="javaScripts/photoChange.js"></script>
+    <script src="javaScripts/video.js"></script>
+    <script src="javaScripts/videoPaggination.js"></script>
 </body>
 </html>
