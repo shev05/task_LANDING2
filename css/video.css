@@ -119,7 +119,7 @@
 
     .video{
         width: 984px;
-        height: 881px;
+        height: 1001px;
         padding: 60px 0;
     }
 
@@ -141,7 +141,7 @@
 @media (max-width: 768px) {
     .video{
         width: 728px;
-        height: 757px;
+        height: 837px;
         padding: 40px 0;
     }
 
@@ -165,7 +165,7 @@
 @media (max-width: 420px) {
     .video{
         width: 100%;
-            height: 475px;
+        height: 550px;
     }
 
     .video__header{
