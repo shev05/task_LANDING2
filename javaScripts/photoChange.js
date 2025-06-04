@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function() {
         overlay.style.width = percentage + '%';
     }
 
-    // Для мыши
     comparisonLine.addEventListener('mousedown', function(e) {
         isDragging = true;
         e.preventDefault();

@@ -236,7 +236,7 @@
 
 @media (max-width: 420px){
     .pictureExplore{
-        width: 420px;
+        width: 100%;
         height: 551px;
         padding: 0;
         flex-direction: column;
@@ -273,16 +273,19 @@
     .explore__image{
         width: 380px;
         height: 368px;
+        margin: 0 auto;
     }
 
     .pictureExplore__image {
-        width: 380px;
+        width: 100%;
         height: 368px;
+        margin: 0 auto;
     }
 
     .explore__image--overlay {
-        width: 380px;
+        width: 100%;
         height: 368px;
+        margin: 0 auto;
     }
     .pictureExplore__first__text{
         display: none;
