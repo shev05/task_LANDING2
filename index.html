@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/pictureExplore.css">
     <link rel="stylesheet" href="css/video.css">
     <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/tickets.css">
 </head>
 
 <body>
@@ -261,6 +262,49 @@
             </div>
         </section>
         <section class="tickets">
+            <h1 class="tickets__header">BUY TICKETS</h1>
+            <hr class="divider-line">
+            <img class="ticket__image" src="components/ticket.png" alt="photo"/>
+            <div class="ticket__type">
+                <p class="ticket__type__header">Ticket Type</p>
+                <form>
+                    <label class="radio__text">
+                      <input class="ticket__radio" type="radio" name="ticket" value="permanent" checked> Permanent exhibition
+                    </label>
+                    <br>
+                    <label class="radio__text">
+                      <input class="ticket__radio" type="radio" name="ticket" value="temporary"> Temporary exhibition
+                    </label>
+                    <br>
+                    <label class="radio__text">
+                      <input class="ticket__radio" type="radio" name="ticket" value="combined"> Combined Admission
+                    </label>
+                </form>
+            </div>
+            <div class="tickets__amount">
+                <p class="tickets__amount__text">Amount</p>
+                <div class="tickets__count">
+                    <p>Basic 18+</p>
+                    <div class="counter">
+                        <button class="counter__btn counter__minus">-</button>
+                        <span class="counter__value" id="basicId">0</span>
+                        <button class="counter__btn counter__plus">+</button>
+                    </div>
+                </div>
+                <div class="tickets__count">
+                    <p>Senior 65+</p>
+                    <div class="counter">
+                        <button class="counter__btn counter__minus">-</button>
+                        <span class="counter__value" id="seniorId">0</span>
+                        <button class="counter__btn counter__plus">+</button>
+                    </div>
+                </div>
+                <p>
+                    <span>Total €</span>
+                    <span id="price">0</span>
+                </p>
+            </div>
+            <button class="ticket__buy">Buy Now</button>
 
         </section>
     </main>
@@ -269,5 +313,6 @@
     <script src="javaScripts/photoChange.js"></script>
     <script src="javaScripts/video.js"></script>
     <script src="javaScripts/videoPaggination.js"></script>
+    <script src="javaScripts/ticketsAdultCount.js"></script>
 </body>
 </html>
