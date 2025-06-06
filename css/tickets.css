@@ -1,0 +1,273 @@
+.tickets{
+    display: flex;
+    position: relative;
+    width: 1440px;
+    height: 743px;
+    padding: 0;
+    margin: 75px auto;
+    flex-direction: column;
+}
+
+.tickets__amount__text{
+    text-align: right;
+}
+
+.tickets__header{
+    font-family: 'Forum';
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 90px;
+    color: #9D8665;
+    margin: 0;
+}
+
+.tickets .divider-line{
+    display: block;
+    border: none;
+    height: 3px;
+    background-color: #710707; 
+    margin-top:25px;
+    width: 100%;
+}
+
+.ticket__image{
+    position: absolute;
+    width: 720px;
+    height: 550px;
+    bottom: 0;
+    left: 0;
+}
+
+.ticket__type{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    left: 780px;
+    top: 193px;
+    width: 270px;
+    height: 211px;
+}
+
+.ticket__type__header{
+    font-weight: 700;
+    font-family: 'Roboto';
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+
+.ticket__radio{
+  border-color: black;
+  accent-color: black;
+  transform: scale(1.2);
+  margin: 12.5px 0;
+}
+
+.radio__text{
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 100%;
+    margin-bottom: 100px;
+}
+
+.tickets__amount{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    width: 150px;
+    height: 341px;
+    right: 0;
+    top: 193px
+}
+
+.tickets__amount p{
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin: 15px 0;
+}
+
+
+.tickets__count {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .tickets__count p {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+  }
+  
+  .counter {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    gap: 15px;
+    border: 3px solid black;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .counter__btn {
+    width: 18px;
+    height: 39px;
+    background: transparent;
+    border: none;
+    color: black;
+    font-size: 32px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .counter__value {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+
+.ticket__buy{
+    position: absolute;
+    width: 175px;
+    height: 50px;
+    border-radius: 2px;
+    background-color: black;
+    color: white;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 2px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    right: 0;
+    bottom: 107px;
+}
+
+@media (max-width: 1024px) {
+    .tickets{
+        width: 984px;
+        height: 598px;
+        margin: 60px auto;
+    }
+    
+    .tickets__header{
+        font-size: 50px;
+        line-height: 75px;
+        letter-spacing: 5px;
+    }
+    .ticket__image{
+        width: 700px;
+        height: 440px;
+    }
+    .ticket__type{
+        display: none;
+    }
+
+    .tickets__amount{
+        width: 175px;
+        height: 321px;
+        right: 29px;
+        top: 158px
+    }
+      
+      .counter {
+        width: 175px;
+      }
+      
+    
+    .ticket__buy{
+        right: 29px;
+        bottom: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .tickets{
+        width: 728px;
+        height: 553px;
+        margin: 40px auto;
+    }
+    
+    .tickets__header{
+        font-size: 40px;
+        line-height: 60px;
+    }
+    .ticket__image{
+        width: 444px;
+        height: 340px;
+        bottom: 90px;
+    }
+
+    .tickets__amount{
+        width: 175px;
+        height: 340px;
+        right: 49px;
+        top: 123px
+    }
+      
+    
+    .ticket__buy{
+        right: 49px;
+    }
+}
+
+@media (max-width: 420px) {
+    .tickets{
+        width: 380px;
+        height: 679px;
+        margin: 40px auto;
+    }
+    
+    .tickets__header{
+        font-size: 28px;
+        line-height: 40px;
+        height: 40px;
+    }
+    .ticket__image{
+        position: relative;
+        width: 380px;
+        height: 160px;
+        bottom: 416px;
+        margin-bottom: 20px;
+        left: auto;
+        top: auto;
+        bottom: auto;
+    }
+
+    .tickets__amount{
+        position: relative;
+        width: 175px;
+        height: 286px;
+        margin: 0 auto;
+        right: auto;
+        top: auto;
+        margin-bottom: 70px;
+    }
+      
+    
+    .ticket__buy{
+        position: relative;
+        margin: 0 auto;
+        right: auto;
+        top: auto;
+        }
+    .tickets__amount__text{
+        text-align: center;
+    }
+}
