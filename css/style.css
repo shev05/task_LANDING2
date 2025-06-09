@@ -11,8 +11,24 @@ body {
     height: 400px;
 }
 
+.footer__line{
+    display: block;
+    position: absolute;
+    border: none;
+    height: 3px;
+    background-color: #666666; 
+    width: 100vw; 
+    left: 49.4%; 
+    transform: translateX(-50%);
+    z-index: 50;
+    top: 265px;
+}
+
 @media (max-width: 768px) {
     .paralax{
         height: 300px;
+    }
+    .footer__line{
+        top: 308px;
     }
 }
