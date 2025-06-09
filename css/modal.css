@@ -1,0 +1,632 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__content {
+    display: flex;
+    position: relative;
+    width: 1440px;
+    height: 845px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;   
+}
+
+.booking__fields{
+    width: 970px;
+    height: 663px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;   
+}
+
+.modal__close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal__close:hover {
+    color: #000;
+}
+
+.modal__image {
+    max-width: 100%;
+    height: auto;
+}
+
+.user__information{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 400px;
+    height: 663px;
+    gap: 15.25px;
+}
+
+.user__information__header{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.user__information__header .logo__image{
+    width: 85px;
+    height: 41px;
+    filter: 
+        brightness(0.7)         
+        sepia(0.3) 
+        hue-rotate(-10deg)
+        saturate(3);
+}
+
+.user__header_text{
+    font-family: 'Forum';
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 100%;
+    margin: 5px 0;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: #9D8665;
+}
+
+.user__information__header .user__text{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #710707;
+    margin: 10px 0;
+}
+
+.date__time {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+  }
+  
+  .picker__wrapper {
+    display: flex;
+    width: 190px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .date__picker,
+  .time__picker {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid #000000;
+    border-radius: 6px;
+    padding: 8px 12px;
+    width: 100%;
+    background: #fff;
+  }
+  
+  .picker__icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    font-size: 18px;
+    color: #000;
+    filter: none;
+  }
+  
+  .picker-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background: transparent;
+    color: #000000;
+  }
+  
+  .picker__arrow {
+    width: 17px;
+    height: 17px;
+    margin-left: 10px;
+    color: #000000;
+    font-size: 12px;
+  }
+  
+.picker-input::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    color: transparent;
+    background: transparent;
+  }
+  
+.input-with-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+  
+.input-icon {
+    position: absolute;
+    left: 12px;
+    font-size: 16px;
+    color: #000000;
+    pointer-events: none; 
+    width: 13px;
+    height: 15px;
+}
+  
+.input__info {
+    width: 100%;
+    padding: 10px 15px 10px 40px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+}
+
+.input__info::placeholder {
+    color: #000000;
+    opacity: 1;
+}
+  
+.select-custom .input__info {
+    width: 100%;
+    padding: 10px 40px 10px 35px; 
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    appearance: none; 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.picker__arrow {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    pointer-events: none;
+}
+
+.entry__ticket{
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 10px 15px 15px 15px;
+    border: 1px solid #030303;
+}
+
+.entry__ticket__text{
+    font-family: 'Forum';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    color: #9D8665;
+    gap: 18px;
+    margin: 5px 0;
+}
+
+.divider-line{
+    display: block;
+    border: none;
+    height: 3px;
+    background-color: #740C11; 
+    margin-top:0;
+    width: 100%;
+    margin: 0;
+}
+
+.counter__ticket{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.counter__ticket{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin: 10px 0;
+}
+
+.counter__ticket .counter{
+    width: 105px;
+    height: 25px;
+    gap: 20px
+}
+
+.counter__ticket .counter__btn{
+    background-color: #000;
+    height: 100%;
+    width: 100%;
+    max-width: 28px;
+    color: white;
+}
+
+.counter__ticket__text{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.ticket__information{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 530px;
+    height: 663px;
+    border: 1px solid #030303;
+    box-sizing: border-box;
+    padding: 25px 30px;
+    gap: 20px;
+}
+
+.ticket__information__text{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ticket__overview__text{
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin: 0;
+}
+
+.ticket__tour__text{
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin: 0;
+    color: #740C11;
+}
+
+.icon{
+    width: 15px;
+    height: 15px;
+}
+
+.ticket__information__about{
+    margin: 0;
+    color: #030303;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.tickets__count__buy{
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.count__buy__this{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.count__ticket{
+    display: flex;
+    gap: 10px;
+}
+
+.count{
+    width: 32px;
+    height: 20px;
+    background-color: #000000;
+    color: #A4A4A3;
+    border-radius: 10px;
+    display: flex;          
+    align-items: center;    
+    justify-content: center; 
+    margin: 0;
+}
+
+.text__this{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin: 0;
+
+}
+
+.total__buy{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.text__total{
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin: 0;
+}
+
+.card__front{
+    display: flex;
+    position: relative;
+    background-color: #BCBCBC;
+    width: 360px;
+    height: 211px;
+    box-sizing: border-box;
+    padding: 15px 20px;
+    gap: 10px;
+    border-radius: 5px;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.input__data, .input__data__full{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin: 0;
+    gap: 5px;
+}
+
+.input__data{
+    width: 215px;
+}
+
+.input__data p, .input__data__full p{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin: 0;
+}
+
+.input__data input, .input__data__full input{
+    width: 100%;
+    height: 35px;
+}
+
+.data__date{
+    display: flex;
+    gap: 15px;
+}
+
+.input__data__full{
+    width: 100%;
+}
+
+.card__backend{
+    display: flex;
+    position: absolute;
+    background-color: #939393;
+    width: 360px;
+    height: 211px;
+    border-radius: 5px;
+    flex-direction: column;
+    right: 30px;
+    bottom: 97px;
+    z-index: 1;
+}
+
+.black__line{
+    position: absolute;
+    width: 100%;
+    height: 45px;
+    top: 25px;
+    background-color: #000000;
+}
+
+.info__cvc{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 16px;
+    top: 85px;
+    align-items: center;
+    justify-content: center;
+}
+
+.info__cvc p h2{
+    font-family: 'Roboto';
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.info__cvc p{
+    font-size: 10px;
+    width: 60px;
+    height: 50px;
+    margin: 0;
+}
+
+.info__cvc h2{
+    font-size: 12px;
+    margin: 0;
+}
+
+.info__cvc input{
+    width: 75px;
+    height: 35px;
+}
+
+.peramida{
+    position: absolute;
+    width: 150px;
+    height: 120px;
+    right: 0;
+    top: 0;
+}
+
+.visa{
+    position: absolute;
+    width: 55px;
+    height: 16px;
+    right: 20px;
+    top: 34px;
+}
+
+.mastercard{
+    position: absolute;
+    width: 53px;
+    height: 32px;
+    right: 20px;
+    top: 65px;
+}
+
+.ticket__book{
+    width: 220px;
+    height: 45px;
+    background-color: #710707;
+    color: white; 
+    margin-top: 46px;
+    cursor: pointer;
+    margin-left: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+
+    .modal {
+        display: flex;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0;
+        overflow: hidden; 
+    }
+    
+    .modal__content {
+        display: flex;
+        position: relative;
+        width: 90%;
+        max-width: 590px;
+        height: 100vh; 
+        background-color: white;
+        align-items: flex-start; 
+        justify-content: flex-start; 
+        border-radius: 8px;
+        overflow: hidden; 
+    }
+    
+    .booking__fields {
+        flex: 1;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 675px 20px 20px;
+        box-sizing: border-box;
+        overflow-y: auto;
+    }
+    
+    .modal__close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        z-index: 10;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    
+}
+
+@media (max-width: 420px) {
+    .modal {
+        height: 100vh;      
+    }
+    
+    .modal__content {
+        max-width: 420px;
+        width: 100%;
+        min-height: 100%;
+        overflow: auto;  
+    }
+    
+    .card__front {
+        width: 100%;
+    }
+    
+    .visa, .mastercard {
+        right: 0;
+    }
+    
+    .card__backend {
+        display: flex;
+        position: relative;
+        background-color: #939393;
+        width: 100%;
+        height: 211px;
+        border-radius: 5px;
+        flex-direction: column;
+        right: auto;
+        bottom: auto;
+        z-index: 1;
+    }
+    
+    .booking__fields {
+        padding: 0;
+        flex: 1;
+        width: 100%;
+        padding: 790px 20px 20px;
+    }
+
+    .ticket__information {
+        height: 885px;
+        width: 100%;
+    }
+}

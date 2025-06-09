@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="css/gallery.css">
     <link rel="stylesheet" href="css/tickets.css">
     <link rel="stylesheet" href="css/contacts.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/modal.css">
 </head>
 
 <body>
@@ -62,7 +64,7 @@
                 <div class="welcome__header">
                     <h1 class="welcome__header_text">Welcome to the Louvre</h1>
                     <p>From the castle to the museum</p>
-                    <button class="welcome__header__button">Discover the Louvre</button>
+                    <button class="welcome__header__button" onclick="window.location.href='#tickets'">Discover the Louvre</button>
                 </div>
                 <div class="welcome__photos">
                     <img class="welcome__photo active" src="components/woman1.png" alt="photo" data-index="0"/>
@@ -87,7 +89,7 @@
                 </div>
             </div>
         </section>
-        <section class="tour">
+        <section class="tour" id="visiting">
             <h1 class="tour__header">Virtual tour</h1>
             <hr class="divider-line">
             <div class="post__cards">
@@ -135,7 +137,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="explore">
             <div class="pictureExplore__bg"></div>
             <div class="pictureExplore">
                 <div class="pictureExplore__text">
@@ -154,7 +156,7 @@
                 </div>
             </div>
         </section>
-        <section class="video">
+        <section class="video" id="video">
             <div class="video__header">
                 <h1 class="video__header_name">Video journey</h1>
                 <p class="video__header__text">Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code</p>
@@ -235,7 +237,7 @@
                 <button class="quwue-right" onclick="nextReviewVideo()">&raquo;</button>
             </div>
         </section>
-        <section>
+        <section id="gallery">
             <div class="gallery__bg"></div>
             <div class="gallery">
                 <h1 class="gallery__header">Art Gallery</h1>
@@ -262,7 +264,7 @@
                 </div>
             </div>
         </section>
-        <section class="tickets">
+        <section class="tickets" id="tickets">
             <h1 class="tickets__header">BUY TICKETS</h1>
             <hr class="divider-line">
             <img class="ticket__image" src="components/ticket.png" alt="photo"/>
@@ -302,13 +304,13 @@
                 </div>
                 <p>
                     <span>Total €</span>
-                    <span id="price">0</span>
+                    <span name="price">0</span>
                 </p>
             </div>
-            <button class="ticket__buy">Buy Now</button>
+            <button class="ticket__buy" onclick="openModal()">Buy Now</button>
         </section>
         <img class="paralax" src="components/paralax.png" alt="photo"/>
-        <section class="contacts">
+        <section class="contacts"  id="contacts">
             <h1 class="contacts__header">Contacts</h1>
             <hr class="divider-line">
             <div class="contacts__information">
@@ -322,11 +324,199 @@
             </div>
         </section>
     </main>
+    <div class="footer__bg"></div>
+    <footer class="footer">
+        <div class="header__logo">
+            <img class="logo__image" src="components/logo.png" alt="logo"/>
+            <p class="logo__text">LOUVRE</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#visiting">Visiting</a></li>
+                <li><a href="#explore">Explore</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#tickets">Tickets</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+        <div class="subscribe__image">
+            <img class="youtube__image" src="components/youtube.png"/>
+            <img class="instagram__image" src="components/instagram.png"/>
+            <img class="facebook__image" src="components/facebook.png"/>
+            <img class="twitter__image" src="components/twitter.png"/>
+            <img class="pinterest__image" src="components/pinterest.png"/>
+        </div>
+        <hr class="footer__line">
+        <div class="footer__company">
+            <p>© 2021</p>
+            <p class="company__name">The Rolling Scopes School</p>
+            <p>Username</p>
+        </div>
+    </footer>
+
+    <section class="modal" id="modal">
+        <div class="modal__content">
+            <span class="modal__close" onclick="closeModal()">&times;</span>
+            <div class="booking__fields">
+                <div class="user__information">
+                    <div class="user__information__header">
+                        <img class="logo__image" src="components/logo.png" alt="logo"/>
+                        <p class="user__header_text">Booking tickets</p>
+                        <p class="user__text">Tour to Louvre</p>
+                        <hr class="divider-line">
+                    </div>
+                    <div class="date__time">
+                        <div class="input-with-icon select-custom">
+                            <img class="input-icon" src="components/select.png" alt="user"/>
+                            <select class="input__info">
+                                <option value="" disabled selected>Date</option>
+                                <option value="1">Friday, August 19</option>
+                                <option value="2">Saturday, August 20</option>
+                                <option value="3">Sunday, August 21</option>
+                            </select>
+                            <img class="picker__arrow" src="components/arrow.png" alt="arrow"/>
+                        </div>
+                        <div class="input-with-icon select-custom">
+                            <img class="input-icon" src="components/select.png" alt="user"/>
+                            <select class="input__info">
+                                <option value="" disabled selected>Time</option>
+                                <option value="1">16:30</option>
+                                <option value="2">17:30</option>
+                                <option value="3">18:30</option>
+                            </select>
+                            <img class="picker__arrow" src="components/arrow.png" alt="arrow"/>
+                        </div>
+                    </div>
+                    <div class="input-with-icon">
+                        <img class="input-icon" src="components/user.png" alt="user"/>
+                        <input type="text" placeholder="Name" class="input__info">
+                    </div>
+                    <div class="input-with-icon">
+                        <img class="input-icon" src="components/mail.png" alt="mail"/>
+                        <input type="email" placeholder="Email" class="input__info">
+                    </div>
+                    <div class="input-with-icon">
+                        <img class="input-icon" src="components/phone.png" alt="phone"/>
+                        <input type="phone" placeholder="Phone" class="input__info">
+                    </div>
+                    <div class="input-with-icon select-custom">
+                        <img class="input-icon" src="components/select.png" alt="user"/>
+                        <select class="input__info">
+                            <option value="" disabled selected>Ticket Type</option>
+                            <option value="1">Permanent exhibition</option>
+                            <option value="2">Temporary exhibition</option>
+                            <option value="3">Combined Admission</option>
+                        </select>
+                        <img class="picker__arrow" src="components/arrow.png" alt="arrow"/>
+                    </div>
+                    <div class="entry__ticket">
+                        <p class="entry__ticket__text">Entry ticket</p>
+                        <hr class="divider-line">
+                        <div class="counter__ticket">
+                            <p>Basic 18+ (20 €)</p>
+                            <div class="counter">
+                                <button class="counter__btn counter__minus">-</button>
+                                <span class="counter__value" id="basicId">0</span>
+                                <button class="counter__btn counter__plus">+</button>
+                            </div>
+                        </div>
+                        <div class="counter__ticket">
+                            <p class="counter__ticket__text">Senior 65+ (10 €)</p>
+                            <div class="counter">
+                                <button class="counter__btn counter__minus">-</button>
+                                <span class="counter__value" id="seniorId">0</span>
+                                <button class="counter__btn counter__plus">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ticket__information">
+                    <div class="ticket__information__text">
+                        <img class="peramida" src="components/piramida.png" alt="piramida"/>
+                        <p class="ticket__overview__text">Overview</p>
+                        <p class="ticket__tour__text">Tour to Louvre</p>
+                        <p class="ticket__information__about"><img class="icon" src="components/date.png"/> Friday, August 19</p>
+                        <p class="ticket__information__about"><img class="icon" src="components/time.png"/> 16:30</p>
+                        <p class="ticket__information__about"><img class="icon" src="components/checked.png"/> Temporary exhibition</p>
+                    </div>
+                    <div class="tickets__count__buy">
+                        <div class="count__buy__this">
+                            <div class="count__ticket">
+                                <p class="count" id="basicId">0</p>
+                                <p class="text__this">Basic (20 €)</p>
+                            </div>
+                            <p class="text__this"><span id="basicSaleCountId" >0</span> €</p>
+                        </div>
+                        <div class="count__buy__this">
+                            <div class="count__ticket">
+                                <p class="count" id="seniorId">0</p>
+                                <p class="text__this">Senior (10 €)</p>
+                            </div>
+                            <p class="text__this"><span id="seniorSaleCountId">0</span> €</p>
+                        </div>
+                        <hr class="divider-line">
+                        <div class="total__buy">
+                            <p class="text__total" >Total:</p>
+                            <p class="text__total"><span name="price">0</span> €</p>
+                        </div>
+                    </div>
+                    <div class="card__front">
+                        <img class="visa" src="components/visa.png" alt="piramida"/>
+                        <img class="mastercard" src="components/mastercard.png" alt="piramida"/>
+                        <div class="input__data">
+                            <p>Card number</p>
+                            <input type="text" 
+                            maxlength="19" 
+                            pattern="[0-9\s]{19}" 
+                            oninput="formatCardNumber(this)"/>
+                        </div>
+                        <div class="input__data">
+                            <p>Expiration date</p>
+                            <div class="data__date">
+                                <input type="number"
+                                placeholder="MM"
+                                maxlength="2"
+                                pattern="(0[1-9]|1[0-2])"
+                                oninput="validateMonth(this)"
+                                onblur="formatMonth(this)">
+                                <input  type="number"
+                                placeholder="YYYY"
+                                maxlength="4"
+                                pattern="(20[0-2][0-9]|203[0-5])"
+                                oninput="validateYear(this)"
+                                onblur="formatYear(this)">
+                            </div>
+                        </div>
+                        <div class="input__data__full">
+                            <p>Cardholder name</p>
+                            <input type="text" 
+                            oninput="this.value = this.value.toUpperCase()" 
+                            pattern="[A-Z\s]+" />
+                        </div>
+                    </div>
+                    <div class="card__backend">
+                        <div class="black__line"></div>
+                        <div class="info__cvc">
+                            <h2>CVC/CVV</h2>
+                            <input type="text" 
+                            maxlength="4"
+                            oninput="this.value = this.value.replace(/[^0-9]/g, '').substring(0,4)"/>
+                            <p>The last 3 or 4 digits on back of the card</p>
+                        </div>
+                    </div>
+                    <button class="ticket__book">Book</button>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="javaScripts/navMobile.js"></script>
     <script src="javaScripts/paggination.js"></script>
     <script src="javaScripts/photoChange.js"></script>
     <script src="javaScripts/video.js"></script>
     <script src="javaScripts/videoPaggination.js"></script>
     <script src="javaScripts/ticketsAdultCount.js"></script>
+    <script src="javaScripts/modal.js"></script>
+    <script src="javaScripts/card.js"></script>
 </body>
 </html>

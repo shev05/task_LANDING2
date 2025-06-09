@@ -277,13 +277,13 @@
     }
 
     .pictureExplore__image {
-        width: 100%;
+        width: 380px;
         height: 368px;
         margin: 0 auto;
     }
 
     .explore__image--overlay {
-        width: 100%;
+        width: 380px;
         height: 368px;
         margin: 0 auto;
     }
