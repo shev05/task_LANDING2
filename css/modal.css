@@ -535,7 +535,6 @@
 @media (max-width: 768px) {
 
     .modal {
-        display: flex;
         position: fixed;
         z-index: 1000;
         left: 0;
